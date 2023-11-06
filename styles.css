@@ -1,0 +1,74 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+.text-animation {
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white;
+    transform-origin: center;
+    transform: rotate(0deg);
+    transition: transform 2s;
+    position:absolute;
+}
+
+.saint{
+    font-size: 24px;
+    white-space: nowrap;
+    border-right: 2px solid white;
+    transform-origin: center;
+    transition: transform 2s;
+}
+
+.text-animation:hover{
+    color: "red";
+}
+.saint:hover{
+    color: "red";
+}
+
+#output2{
+    margin-top: -48px;
+}
+
+.image-container {
+    display: none;
+    pointer-events: none; 
+}
+
+.image-container2 {
+    display: none;
+    pointer-events: none; 
+}
+
+#follow-image {
+    height: 50px;
+    position: absolute;
+    text-align: center;
+    border: 2px solid #000000;
+    z-index:1;
+}
+
+#mouthopen{
+    scale: 0.1;
+    position: relative;
+    left: -65px;
+}
+
+#mouthclosed{
+    scale: 0.12;
+    position: relative;
+    left: -65px;
+
+}
